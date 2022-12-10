@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url(./assets/images/bg-mobile-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
+  font-family: "Josefin Sans", sans-serif;
+
+  @media only screen and (min-width: 375px){
+    background: url(./assets/images/bg-desktop-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
+
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: .5rem;
+
+  &__h1 {
+    color: $Very-Light-Gray;
+    letter-spacing: .75rem;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+}
+

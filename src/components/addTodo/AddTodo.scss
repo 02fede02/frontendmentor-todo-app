@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+
+.form {
+    display: flex;
+    gap: .75rem;
+    background-color: $Very-Light-Gray;
+    border-radius: .35rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+
+    &__radio {
+        appearance: none;
+        background-color: $Very-Light-Gray;
+        margin: 0;
+        font: inherit;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.15em solid $Very-Light-Grayish-Blue;
+        border-radius: 50%;
+    }
+
+    &__input {
+        width: 100%;
+        border: none;
+        font-family: inherit;
+        cursor: pointer;
+
+        &:focus{
+            outline: none;
+            cursor: auto;
+        }
+    }
+}

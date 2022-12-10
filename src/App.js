@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { ReactComponent as MoonIcon } from "./assets/images/icon-moon.svg";
+import "./App.scss";
+import AddTodo from "./components/addTodo/AddTodo";
+import TodoFilter from "./components/todoFilter/TodoFilter";
+import TodoList from "./components/todoList/TodoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Fragment>
+      <header className="header">
+        <h1 className="header__h1">Todo</h1>
+        <MoonIcon className="header__icon" />
       </header>
-    </div>
+      <AddTodo />
+      <TodoList />
+      <TodoFilter />
+    </Fragment>
   );
 }
 

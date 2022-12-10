@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.div {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: $Very-Light-Gray;
+    border-radius: .35rem;
+    padding: 1rem 1.5rem;
+    color: $Dark-Grayish-Blue;
+    font-weight: 700;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        cursor: pointer;
+    }
+
+    &__label--all{
+        color: $Bright-Blue;
+    }
+
+    &__input--all:checked ~ label#all {
+        color: $Bright-Blue;
+    }
+
+    &__input--all:checked ~ label {
+        color: $Dark-Grayish-Blue;
+    }
+
+    &__input--active:checked ~ label#active {
+        color: $Bright-Blue;
+    }
+
+    &__input--active:checked ~ label {
+        color: $Dark-Grayish-Blue;
+    }
+    &__input--completed:checked ~ label#completed {
+        color: $Bright-Blue;
+    }
+
+    &__input--completed:checked ~ label {
+        color: $Dark-Grayish-Blue;
+    }
+}
+
+

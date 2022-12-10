@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.ul {
+    background-color: $Very-Light-Gray;
+    max-width: 80%;
+    margin: 1rem auto;
+    border-radius: .35rem;
+    padding-left: 0;
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+    }
+
+    &__span {
+        color: $Dark-Grayish-Blue;
+    }
+
+    &__span--btn {
+        cursor: pointer;
+    }
+}
