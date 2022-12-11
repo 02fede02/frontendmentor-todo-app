@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { useState } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
 import Todo from "../todo/Todo";
 import "./TodoList.scss";
