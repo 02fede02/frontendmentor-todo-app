@@ -16,13 +16,13 @@ const TodoFilter = () => {
       <input className="div__input div__input--active" type="radio" id="active" name="filter"/>
       <input className="div__input div__input--completed" type="radio" id="completed" name="filter"/>
 
-      <label className="div__label div__label--all" id="all" onClick={() => handleClickAll("all")} for="all">
+      <label className="div__label div__label--all" id="all" onClick={() => handleClickAll("all")} htmlFor="all">
         All
       </label>
-      <label className="div__label" id="active" onClick={() => handleClickAll("active")} for="active">
+      <label className="div__label" id="active" onClick={() => handleClickAll("active")} htmlFor="active">
         Active
       </label>
-      <label className="div__label" id="completed" onClick={() => handleClickAll("completed")} for="completed">
+      <label className="div__label" id="completed" onClick={() => handleClickAll("completed")} htmlFor="completed">
         Completed
       </label>
     </div>

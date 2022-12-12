@@ -4,8 +4,9 @@ import { ReactComponent as CrossButton } from "../../assets/images/icon-cross.sv
 import "./Todo.scss";
 import { CheckedContext } from "../../contexts/CheckedContext";
 import { useEffect } from "react";
+import { Draggable } from "@hello-pangea/dnd";
 
-export default function Todo({ value, id }) {
+export default function Todo({ value, id , index}) {
   const { todoList, setTodoList } = useContext(TodoContext);
   const [  checkedClass, setCheckedClass ] = useState(false)
 
@@ -40,7 +41,11 @@ export default function Todo({ value, id }) {
   };
 
   return (
-    <li className="li" draggable>
+    <Draggable key={id.toString()} draggableId={id.toString()} index={index}>
+    {(draggableProvided) => 
+    (<li {...draggableProvided.draggableProps}
+      ref={draggableProvided.innerRef}
+      {...draggableProvided.dragHandleProps} className="li" >
       <div className="li__div">
         <input className={checkedClass ? "li__radio checked" : "li__radio"} onClick={handleClick} type="checkbox" />{" "}
         <span className="li__span--value" onClick={handleClick} >{value}</span>
@@ -48,6 +53,7 @@ export default function Todo({ value, id }) {
       <span className="li__span">
         <CrossButton onClick={handlClickRemove} />
       </span>
-    </li>
+    </li>)}
+    </Draggable>
   );
 }

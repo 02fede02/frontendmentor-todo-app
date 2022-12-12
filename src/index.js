@@ -6,12 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import { TodoProvider } from "./contexts/TodoContext";
 import { CheckedContextProvider } from "./contexts/CheckedContext";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <TodoProvider>
       <CheckedContextProvider>
+      
         <App />
+        
       </CheckedContextProvider>
     </TodoProvider>
   </React.StrictMode>

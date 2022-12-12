@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
 import Todo from "../todo/Todo";
 import "./TodoList.scss";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 export default function TodoList() {
   const {
@@ -19,23 +20,39 @@ export default function TodoList() {
   };
 
   return (
-    <ul className="ul">
-      {todoDisplay === "all" &&
-        todoList.map(({ id, value }) => (
-          <Todo key={id} value={value} id={id} />
-        ))}
-      {todoDisplay === "active" &&
-        todoIncomplete.map(({ id, value }) => (
-          <Todo key={id} value={value} id={id} />
-        ))}
-      {todoDisplay === "completed" &&
-        todoComplete.map(({ id, value }) => (
-          <Todo key={id} value={value} id={id} />
-        ))}
-      <div className="ul__div">
-        <span className="ul__span">{todoIncomplete.length} items left</span>
-        <span className="ul__span ul__span--btn" onClick={handleClick}>Clear Completed</span>
-      </div>
-    </ul>
+    <Fragment>
+      <Droppable droppableId="todos">
+        {(droppableProvided) => (
+          <ul
+            {...droppableProvided.droppableProps}
+            ref={droppableProvided.innerRef}
+            className="ul"
+          >
+            {todoDisplay === "all" &&
+              todoList.map(({ id, value }, index) => (
+                <Todo key={id} value={value} id={id} index={index} />
+              ))}
+            {todoDisplay === "active" &&
+              todoIncomplete.map(({ id, value }, index) => (
+                <Todo key={id} value={value} id={id} index={index} />
+              ))}
+            {todoDisplay === "completed" &&
+              todoComplete.map(({ id, value }, index) => (
+                <Todo key={id} value={value} id={id} index={index} />
+              ))}
+
+            {droppableProvided.placeholder}
+            <div className="div">
+              <span className="div__span">
+                {todoIncomplete.length} items left
+              </span>
+              <span className="div__span div__span--btn" onClick={handleClick}>
+                Clear Completed
+              </span>
+            </div>
+          </ul>
+        )}
+      </Droppable>
+    </Fragment>
   );
 }

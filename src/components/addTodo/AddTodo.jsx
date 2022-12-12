@@ -14,7 +14,7 @@ export default function AddTodo() {
       event.preventDefault()
       setTodoList([
         ...todoList, {
-          id: Math.random()*999,
+          id: (Math.random()*999).toString(),
           value: todo,
           complete: false
         }
