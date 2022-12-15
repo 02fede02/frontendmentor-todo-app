@@ -1,19 +1,19 @@
-@import "../../variables.scss";
-
 .ul {
-  background-color: $Very-Light-Gray;
-  max-width: 80%;
+  // background-color: $Very-Light-Gray;
+  width: min(80%, 50rem);
   margin: 1rem auto;
   border-radius: 0.35rem;
   padding-left: 0;
+
+
 }
-.div {
+.container {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
 
   &__span {
-    color: $Dark-Grayish-Blue;
+    // color: $Dark-Grayish-Blue;
   }
 
   &__span--btn {

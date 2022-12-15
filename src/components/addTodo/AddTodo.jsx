@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react'
 import { TodoContext } from "../../contexts/TodoContext";
-import "./AddTodo.scss"
+
 
 export default function AddTodo() {
     const [todo, setTodo] = useState("")
@@ -25,7 +25,7 @@ export default function AddTodo() {
   return (
     <form className='form' onSubmit={onSubmitHandler}>
       <input className='form__radio' type="checkbox" />
-      <input className='form__input' name="todo" value={todo} onChange={onChangeHandler} type="text" placeholder="Create a new todo..."></input>
+      <input className='form__input' name="todo" value={todo} onChange={onChangeHandler} type="text" placeholder="Create a new todo..." required></input>
     </form>
   );
 }

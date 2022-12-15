@@ -1,22 +1,22 @@
-@import "../../variables.scss";
+@import "variables";
 
 .form {
     display: flex;
     gap: .75rem;
-    background-color: $Very-Light-Gray;
+    // background-color: $Very-Light-Gray;
     border-radius: .35rem;
-    max-width: 80%;
+    width: min(80%, 50rem);
     margin: 0 auto;
     padding: 1rem 1.5rem;
 
     &__radio {
         appearance: none;
-        background-color: $Very-Light-Gray;
+        background-color: inherit;
         margin: 0;
         font: inherit;
         width: 1.5rem;
         height: 1.5rem;
-        border: 0.15em solid $Very-Light-Grayish-Blue;
+        // border: 0.15em solid $Very-Light-Grayish-Blue;
         border-radius: 50%;
     }
 

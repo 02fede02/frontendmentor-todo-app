@@ -1,7 +1,8 @@
 import { createContext, useEffect, useState } from "react";
+import { getStorage } from "../utils/LocalStorage";
 
 export const TodoContext = createContext({
-    todoList: [],
+    todoList:  [],
     setTodoList: () => {},
     todoIncomplete: [],
     setTodoIncomplete: () => {},
@@ -12,7 +13,7 @@ export const TodoContext = createContext({
 })
 
 export const TodoProvider = ({ children }) => {
-    const [todoList, setTodoList] = useState([])
+    const [todoList, setTodoList] = useState(getStorage("todo") || [])
     const [todoIncomplete, setTodoIncomplete] = useState([])
     const [todoComplete, setTodoComplete] = useState([])
     const [todoDisplay, setTodoDisplay] = useState("all")

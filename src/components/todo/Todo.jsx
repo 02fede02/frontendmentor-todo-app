@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
 import { ReactComponent as CrossButton } from "../../assets/images/icon-cross.svg";
-import "./Todo.scss";
 import { CheckedContext } from "../../contexts/CheckedContext";
 import { useEffect } from "react";
 import { Draggable } from "@hello-pangea/dnd";

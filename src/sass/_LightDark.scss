@@ -1,0 +1,103 @@
+#light {
+    background: url(../assets/images/bg-mobile-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
+  
+    @media only screen and (min-width: 375px){
+      background: url(../assets/images/bg-desktop-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
+  
+    }
+
+    & .div{
+        background-color: $Very-Light-Gray;
+
+        &__label:hover {
+            color: $Very-Dark-Grayish-Blue;
+        }
+    }
+
+    & .form {
+        background-color: $Very-Light-Gray;
+
+        &__radio {
+            border: 0.15em solid $Very-Light-Grayish-Blue;
+        }
+    }
+
+    & .ul {
+        background-color: $Very-Light-Gray;
+
+        
+    }
+
+    & .container {
+        &__span {
+            color: $Dark-Grayish-Blue;
+          }
+    }
+
+    & .li {
+        border-bottom: 0.175rem solid $Very-Light-Grayish-Blue;
+
+        &__radio {
+            background-color: $Very-Light-Gray;
+            border: 0.15rem solid $Very-Light-Grayish-Blue;
+        }
+
+        &__div {
+            color: $Very-Dark-Grayish-Blue;
+        }
+    }
+  }
+  
+  #dark {
+    background: url(../assets/images/bg-mobile-dark.jpg) no-repeat , $Very-Dark-Blue;
+  
+    @media only screen and (min-width: 375px){
+      background: url(../assets/images/bg-desktop-dark.jpg) no-repeat , $Very-Dark-Blue;
+  
+    }
+
+    & .div {
+        background-color: $Very-Dark-Desaturated-Blue;
+        
+        &__label:hover {
+            color: $Light-Grayish-Blue-hover;
+        }
+    }
+
+    & .form {
+        background-color: $Very-Dark-Desaturated-Blue;
+
+        &__radio {
+            border: 0.15em solid $Very-Dark-Grayish-Blue;
+        }
+
+        &__input {
+            color: $Light-Grayish-Blue;
+            background-color: inherit;
+        }
+    }
+
+    & .ul {
+        background-color: $Very-Dark-Desaturated-Blue;
+    }
+
+    & .container {
+        &__span {
+            color: $Dark-Grayish-Blue;
+          }
+    }
+
+    & .li {
+        border-bottom: 0.175rem solid $Very-Dark-Grayish-Blue;
+
+        &__radio {
+            background-color: inherit;
+            border: 0.15rem solid $Very-Dark-Grayish-Blue;
+        }
+
+        &__div {
+            color: $Light-Grayish-Blue;
+        }
+    }
+  }
+  

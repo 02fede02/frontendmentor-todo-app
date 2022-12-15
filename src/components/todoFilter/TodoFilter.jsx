@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
-import "./TodoFilter.scss";
+
 
 const TodoFilter = () => {
   const { todoDisplay, setTodoDisplay } = useContext(TodoContext);
