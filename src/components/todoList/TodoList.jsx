@@ -8,7 +8,6 @@ import { setStorage } from "../../utils/LocalStorage";
 export default function TodoList() {
   const { todoList, setTodoList, todoIncomplete, todoComplete, todoDisplay } =
     useContext(TodoContext);
-    console.log("todolist", todoList)
 
     useEffect(() => setStorage("todo", todoList), [todoList])
 

@@ -1,0 +1,61 @@
+#dark {
+  background: url(../assets/images/bg-mobile-dark.jpg) no-repeat,
+    $Very-Dark-Blue;
+
+  @media only screen and (min-width: 375px) {
+    background: url(../assets/images/bg-desktop-dark.jpg) no-repeat,
+      $Very-Dark-Blue;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    background-size: 100%;
+  }
+
+  & .div {
+    color: $Dark-Grayish-Blue;
+    background-color: $Very-Dark-Desaturated-Blue;
+
+    &__label:hover {
+      color: $Light-Grayish-Blue-hover;
+    }
+  }
+
+  & .form {
+    background-color: $Very-Dark-Desaturated-Blue;
+
+    &__radio {
+      border: 0.15em solid $Very-Dark-Grayish-Blue;
+    }
+
+    &__input {
+      color: $Light-Grayish-Blue;
+      background-color: inherit;
+    }
+  }
+
+  & .ul {
+    background-color: $Very-Dark-Desaturated-Blue;
+  }
+
+  & .container {
+    &__span {
+      color: $Dark-Grayish-Blue;
+    }
+  }
+
+  & .li {
+    border-bottom: 0.175rem solid $Very-Dark-Grayish-Blue;
+
+    &__radio {
+      border: 0.15rem solid $Very-Dark-Grayish-Blue;
+    }
+
+    &__div {
+      color: $Light-Grayish-Blue;
+    }
+  }
+
+  & .container__span--btn:hover {
+    color: $Light-Grayish-Blue-hover;
+  }
+}

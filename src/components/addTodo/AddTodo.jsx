@@ -9,6 +9,18 @@ export default function AddTodo() {
     const onChangeHandler = (event) => {
         setTodo(event.target.value)
     }
+
+    const onClickHandler = () => {
+      const newTodoList = todoList.map(todo => {
+        if(todo.complete){
+          todo.complete = false
+        } else {
+          todo.complete = true
+        }
+        return todo
+      })
+      setTodoList([...newTodoList])
+    }
     
     const onSubmitHandler = (event) => {
       event.preventDefault()
@@ -24,7 +36,7 @@ export default function AddTodo() {
 
   return (
     <form className='form' onSubmit={onSubmitHandler}>
-      <input className='form__radio' type="checkbox" />
+      <input className='form__radio' type="checkbox" onClick={onClickHandler}/>
       <input className='form__input' name="todo" value={todo} onChange={onChangeHandler} type="text" placeholder="Create a new todo..." required></input>
     </form>
   );

@@ -5,18 +5,16 @@
 body {
   padding: 0;
   margin: 0;
-  // background: url(../assets/images/bg-mobile-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
   font-family: "Josefin Sans", sans-serif;
 
-  // @media only screen and (min-width: 375px){
-  //   background: url(../assets/images/bg-desktop-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
-
-  // }
 }
-
 
 .app__p {
   margin-top: 4rem;
   text-align: center;
   color: $Dark-Grayish-Blue;
+
+  @media only screen and (min-width: 1440px) {
+    margin-top: 8rem;
+  }
 }

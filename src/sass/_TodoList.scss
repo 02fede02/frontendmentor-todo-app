@@ -1,22 +1,22 @@
 .ul {
-  // background-color: $Very-Light-Gray;
   width: min(80%, 50rem);
   margin: 1rem auto;
   border-radius: 0.35rem;
   padding-left: 0;
-
-
+  box-shadow: 8px 6px 9px -4px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 8px 6px 9px -4px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 8px 6px 9px -4px rgba(0, 0, 0, 0.17);
 }
 .container {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
 
-  &__span {
-    // color: $Dark-Grayish-Blue;
-  }
-
   &__span--btn {
     cursor: pointer;
+
+    // &:hover {
+    //   color: $Light-Grayish-Blue-hover;
+    // }
   }
 }
