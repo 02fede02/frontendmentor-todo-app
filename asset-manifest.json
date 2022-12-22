@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-todo-app/static/css/main.88279423.css",
+    "main.js": "/frontendmentor-todo-app/static/js/main.1b223560.js",
+    "static/media/bg-desktop-light.jpg": "/frontendmentor-todo-app/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/frontendmentor-todo-app/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/frontendmentor-todo-app/index.html",
+    "static/media/icon-sun.svg": "/frontendmentor-todo-app/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/frontendmentor-todo-app/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/frontendmentor-todo-app/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "main.88279423.css.map": "/frontendmentor-todo-app/static/css/main.88279423.css.map",
+    "main.1b223560.js.map": "/frontendmentor-todo-app/static/js/main.1b223560.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88279423.css",
+    "static/js/main.1b223560.js"
+  ]
+}
