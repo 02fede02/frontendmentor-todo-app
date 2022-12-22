@@ -1,54 +1,52 @@
 .div {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: 0 auto;
-    border-radius: .35rem;
-    padding: 1rem 1.5rem;
-    
-    font-weight: 700;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 0.35rem;
+  padding: 1rem 1.5rem;
 
-    @media only screen and (min-width: 780px) {
-        position: relative;
-        top: -4.2rem;
-        left: 0rem;
-        width: min(30%, 20rem);
-    }
+  font-weight: 700;
 
-    &__input {
-        display: none;
-    }
+  @media only screen and (min-width: 780px) {
+    position: relative;
+    top: -4.2rem;
+    left: 0rem;
+    width: min(30%, 20rem);
+  }
 
-    &__label {
-        cursor: pointer;
-    }
+  &__input {
+    display: none;
+  }
 
-    &__label--all{
-        color: $Bright-Blue;
-    }
+  &__label {
+    cursor: pointer;
+  }
 
-    &__input--all:checked ~ label#all {
-        color: $Bright-Blue;
-    }
+  &__label--all {
+    color: $Bright-Blue;
+  }
 
-    &__input--all:checked ~ label {
-        color: $Dark-Grayish-Blue;
-    }
+  &__input--all:checked ~ label#all {
+    color: $Bright-Blue;
+  }
 
-    &__input--active:checked ~ label#active {
-        color: $Bright-Blue;
-    }
+  &__input--all:checked ~ label {
+    color: $Dark-Grayish-Blue;
+  }
 
-    &__input--active:checked ~ label {
-        color: $Dark-Grayish-Blue;
-    }
-    &__input--completed:checked ~ label#completed {
-        color: $Bright-Blue;
-    }
+  &__input--active:checked ~ label#active {
+    color: $Bright-Blue;
+  }
 
-    &__input--completed:checked ~ label {
-        color: $Dark-Grayish-Blue;
-    }
+  &__input--active:checked ~ label {
+    color: $Dark-Grayish-Blue;
+  }
+  &__input--completed:checked ~ label#completed {
+    color: $Bright-Blue;
+  }
+
+  &__input--completed:checked ~ label {
+    color: $Dark-Grayish-Blue;
+  }
 }
-
-

@@ -1,18 +1,18 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: min(80%, 50rem);
-    margin: 0 auto;
-    padding: .5rem;
-  
-    &__h1 {
-      color: $Very-Light-Gray;
-      letter-spacing: .75rem;
-      text-transform: uppercase;
-    }
-  
-    &__icon {
-      cursor: pointer;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(80%, 50rem);
+  margin: 0 auto;
+  padding: 0.5rem;
+
+  &__h1 {
+    color: $Very-Light-Gray;
+    letter-spacing: 0.75rem;
+    text-transform: uppercase;
   }
+
+  &__icon {
+    cursor: pointer;
+  }
+}

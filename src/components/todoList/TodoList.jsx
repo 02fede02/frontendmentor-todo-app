@@ -9,7 +9,7 @@ export default function TodoList() {
   const { todoList, setTodoList, todoIncomplete, todoComplete, todoDisplay } =
     useContext(TodoContext);
 
-    useEffect(() => setStorage("todo", todoList), [todoList])
+  useEffect(() => setStorage("todo", todoList), [todoList]);
 
   const handleClick = () => {
     const newTodoList = todoList.filter((todo) => todo.complete !== true);

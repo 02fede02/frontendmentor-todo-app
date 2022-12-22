@@ -13,20 +13,20 @@ export default function Header() {
       : (document.body.id = "dark");
   }, [theme]);
 
-  useEffect(() => setStorage("theme", theme), [theme])
+  useEffect(() => setStorage("theme", theme), [theme]);
 
   const onClickHandler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light")
-  }
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
 
   return (
     <header className="header">
       <h1 className="header__h1">Todo</h1>
-      {
-        theme === "light" ? 
-        <MoonIcon onClick={onClickHandler} className="header__icon" /> :
+      {theme === "light" ? (
+        <MoonIcon onClick={onClickHandler} className="header__icon" />
+      ) : (
         <SunIcon onClick={onClickHandler} className="header__icon" />
-      }
+      )}
     </header>
   );
 }

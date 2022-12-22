@@ -6,7 +6,7 @@
   list-style: none;
 
   @media only screen and (min-width: 780px) {
-    &:hover span{
+    &:hover span {
       opacity: 1;
     }
   }
@@ -20,7 +20,9 @@
     height: 1.5rem;
     border-radius: 50%;
 
-    
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__span {
@@ -42,19 +44,17 @@
   &__span {
     cursor: pointer;
   }
-  
 }
 
 .checked {
   background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   border: none;
 
-
   & ~ span {
-      color: $Dark-Grayish-Blue;
-      text-decoration: line-through;
+    color: $Dark-Grayish-Blue;
+    text-decoration: line-through;
   }
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -66,14 +66,14 @@
     transform: translateX(8px) rotate(-50deg);
     transform-origin: left bottom;
   }
-  
+
   &::after {
     content: "";
     position: absolute;
     left: 10%;
     bottom: 30%;
     height: 3px;
-    width: .55rem;
+    width: 0.55rem;
     background-color: white;
     transform: translateX(10px) rotate(-45deg);
     transform-origin: left bottom;

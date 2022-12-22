@@ -4,9 +4,7 @@ import TodoFilter from "./components/todoFilter/TodoFilter";
 import TodoList from "./components/todoList/TodoList";
 import Header from "./components/header/Header";
 
-
 function App() {
-
   return (
     <Fragment>
       <Header />

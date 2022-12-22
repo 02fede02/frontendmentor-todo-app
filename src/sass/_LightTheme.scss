@@ -1,61 +1,57 @@
 #light {
-    background: url(../assets/images/bg-mobile-light.jpg) no-repeat , $Very-Light-Grayish-Blue;
-    
-  
-    @media only screen and (min-width: 375px){
-      background: url(../assets/images/bg-desktop-light.jpg)  no-repeat , $Very-Light-Grayish-Blue;
-        
-    }
+  background: url(../assets/images/bg-mobile-light.jpg) no-repeat,
+    $Very-Light-Grayish-Blue;
 
-    @media only screen and (min-width: 1400px) {
-        background-size: 100%;
-    }
-
-    & .div{
-        color: $Dark-Grayish-Blue;
-        background-color: $Very-Light-Gray;
-
-        &__label:hover {
-            color: $Very-Dark-Grayish-Blue;
-        }
-    }
-
-    & .form {
-        background-color: $Very-Light-Gray;
-
-        &__radio {
-            border: 0.15em solid $Very-Light-Grayish-Blue;
-        }
-    }
-
-    & .ul {
-        background-color: $Very-Light-Gray;
-
-        
-    }
-
-    & .container {
-        &__span {
-            color: $Dark-Grayish-Blue;
-          }
-    }
-
-    & .li {
-        border-bottom: 0.175rem solid $Very-Light-Grayish-Blue;
-
-        &__radio {
-            background-color: $Very-Light-Gray;
-            border: 0.15rem solid $Very-Light-Grayish-Blue;
-        }
-
-        &__div {
-            color: $Very-Dark-Grayish-Blue;
-        }
-    }
-
-    & .container__span--btn:hover {
-        color: $Very-Dark-Grayish-Blue;
-      }
+  @media only screen and (min-width: 375px) {
+    background: url(../assets/images/bg-desktop-light.jpg) no-repeat,
+      $Very-Light-Grayish-Blue;
   }
-  
-  
+
+  @media only screen and (min-width: 1400px) {
+    background-size: 100%;
+  }
+
+  & .div {
+    color: $Dark-Grayish-Blue;
+    background-color: $Very-Light-Gray;
+
+    &__label:hover {
+      color: $Very-Dark-Grayish-Blue;
+    }
+  }
+
+  & .form {
+    background-color: $Very-Light-Gray;
+
+    &__radio {
+      border: 0.15em solid $Very-Light-Grayish-Blue;
+    }
+  }
+
+  & .ul {
+    background-color: $Very-Light-Gray;
+  }
+
+  & .container {
+    &__span {
+      color: $Dark-Grayish-Blue;
+    }
+  }
+
+  & .li {
+    border-bottom: 0.175rem solid $Very-Light-Grayish-Blue;
+
+    &__radio {
+      background-color: $Very-Light-Gray;
+      border: 0.15rem solid $Very-Light-Grayish-Blue;
+    }
+
+    &__div {
+      color: $Very-Dark-Grayish-Blue;
+    }
+  }
+
+  & .container__span--btn:hover {
+    color: $Very-Dark-Grayish-Blue;
+  }
+}
